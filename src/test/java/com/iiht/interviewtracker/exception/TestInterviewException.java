@@ -21,10 +21,11 @@ import com.iiht.interviewtracker.controller.InterviewController;
 import com.iiht.interviewtracker.dto.InterviewDTO;
 import com.iiht.interviewtracker.service.InterviewService;
 import com.iiht.utils.MasterData;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 
 
 @WebMvcTest(InterviewController.class)
-@RunWith(SpringRunner.class)
+@AutoConfigureMockMvc
 public class TestInterviewException {
 
 	@Autowired 
