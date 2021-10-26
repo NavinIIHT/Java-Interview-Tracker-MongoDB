@@ -21,9 +21,10 @@ import com.iiht.interviewtracker.controller.UserController;
 import com.iiht.interviewtracker.dto.UserDTO;
 import com.iiht.interviewtracker.service.UserService;
 import com.iiht.utils.MasterData;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 
 @WebMvcTest(UserController.class)
-@RunWith(SpringRunner.class)
+@AutoConfigureMockMvc
 public class TestUserException {
 	
 	@Autowired 
